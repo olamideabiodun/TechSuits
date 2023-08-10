@@ -96,8 +96,7 @@ a{
     max-width: 50%;
     max-height: 70%;
     min-width: 30%;
-    background-color: white;
-    opacity: 0.5;
+    background-color: #12203C;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
