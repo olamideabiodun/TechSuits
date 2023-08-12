@@ -147,7 +147,7 @@ a{
 .search_btn {
     padding: 8px 30px;
     background-color: white;
-    border: 1px solid #12203C;
+    box-shadow: .1px px 10px 10px #12203C;
     outline: 0;
     border-radius: 9px;
 }
@@ -162,7 +162,7 @@ a{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
     padding: 40px;
 
 }
@@ -273,9 +273,9 @@ a{
 .cat {
     position: relative;
     width: 100%;
-    height: 180px;
+    max-height: 28rem;
+    min-height: 200px;
     max-height: 250px;
-    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -306,7 +306,7 @@ a{
 }
 .cat_ele_bx {
     position: relative;
-    width: 100%;
+    min-width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -316,7 +316,7 @@ a{
 .element_img {
     width: 90%;
     height: 100%;
-    background-color: pink;
+    background-color: #12203C;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -332,6 +332,10 @@ a{
     position: absolute;
     top: 5px;
     left: 15px;
+    color: azure;
+    background-color: #323843;
+    padding: 5px 10px;
+    border-radius: 3px;
 }
 
 
@@ -341,9 +345,10 @@ a{
     display: flex;
     align-items: center;
     background-color: #12203C;
+    justify-content: space-around;
     position: relative;
     left: 0;
-    padding: 20px;
+    padding: 40px;
 }
 .footer .email_support {
     margin-top: 30px;
@@ -353,14 +358,16 @@ a{
     justify-content: space-around;
     flex-direction: column;
     position: relative;
-    padding: 30px 0;
+    padding: 20px 0;
+    margin-right: auto;
 }
 .footer_icon {
     width: 11rem;
     position: absolute;
-    top: -60px;
+    top: -50px;
     left: -10px;
     z-index: 100;
+    margin-left: 15px;
 }
 .newsletter_title {
    font-size: 16px;
