@@ -67,11 +67,11 @@ a{
 .sign-in-up_bx > * {
     width: 10rem;
     height: 2.5rem;
-    background-color: #12203C;
+    background-color: #130c48;
     text-align: center;
     border-radius: 5PX;
     outline: none;
-    border: 3px solid #12203C;
+    border: 3px solid #130c48;
     
 }
 .nav-signup-btn {
@@ -80,12 +80,12 @@ a{
     font-weight: 700;
 }
 .nav-login-btn {
-    background-color: #12203C;
+    background-color: #130c48;
     color: #FFFFFF;
     font-weight: 700;
 }
 .nav-signup-btn a{
-    color: #12203C;
+    color: #130c48;
 }
 .nav-login-btn a{
     color: #FFFFFF;
@@ -115,7 +115,7 @@ a{
     border-radius: 9px;
     overflow: hidden;
     outline: none;
-    border: 1px solid #12203C;
+    border: 1px solid #130c48;
 
 }
 .search_bar .search_text {
@@ -134,7 +134,7 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    border-left: 1px solid #12203C;
+    border-left: 1px solid #130c48;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -147,7 +147,7 @@ a{
 .search_btn {
     padding: 8px 30px;
     background-color: white;
-    box-shadow: .1px px 10px 10px #12203C;
+    box-shadow: .1px px 10px 10px #130c48;
     outline: 0;
     border-radius: 9px;
 }
@@ -188,7 +188,7 @@ a{
     gap: 10px;
 }
 .cat_all {
-    border-bottom: 1px solid #12203C;
+    border-bottom: 1px solid #130c48;
     padding-bottom: 5px;
     margin-top: -8px;
 }
