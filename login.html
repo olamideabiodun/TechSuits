@@ -10,12 +10,30 @@
 <body class="bg-gray-100 text-center italic">
     <header>
         <nav class="fixed top-0 z-10 w-[100%] sm:justify-between md:justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
-            <div class="logo">
-                <img src="./icons/techsuit.jpg" class="h-10 w-[200px]" alt="">
+            <div>
+              <div class="logo">
+                <img src="./techsuit.jpg" class="h-10 w-[200px]" alt="">
+              </div>
+
+              <!---------------------- smal screen nav ------------------------------->
+              <div class="small_nav  overflow-hidden h-0">
+              <div class="  overflow-hidden">
+                <ul class="mt-7 flex flex-col text-[#130c48] gap-4 gap-y-4  font-bold">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                <div class=" ml-10  mt-5 flex-col flex  gap-y-4">
+                    <button class="p-1 w-[70px]   bg-[#130c48] text-white border-2  rounded-md" type="button"><a href="./login.html">Login</a></button>
+                    <button class="p-1 w-[70px] text-[#130c48] border-2 border-[#130c48] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
+                 </div>
+              </div>
             </div>
+            </div>
+            
             <div class="flex md:gap-6 lg:gap-28 ">
              <div class="links lg:block  md:block hidden">
-                <ul class="flex  text-[#130c48] gap-4  font-bold">
+                <ul class="flex text-[#130c48] gap-4  font-bold">
                     <li><a href="">Shop</a></li>
                     <li><a href="">Category</a></li>
                     <li><a href="">About</a></li>
@@ -29,7 +47,10 @@
              </div>
             </div>
             </div>
-            <h1 class="text-[#130c48] font-bold text-2xl block lg:hidden md:hidden">=</h1>
+            <div>
+               <h1 onclick="show_nav()" class="open_nav text-[#130c48] cursor-pointer font-bold text-2xl block lg:hidden md:hidden"> = </h1>
+               <h1 onclick="close_nav()" class="close_nav sm:hidden text-[#130c48] cursor-pointer font-bold text-2xl block lg:hidden md:hidden"> X  </h1>
+            </div>
         </nav>
     </header>
     
@@ -53,7 +74,7 @@
             <div class=" lg:flex justify-center md:flex ml-3 gap-1 lg:gap-10">
                 <div>
                    <input type="email" placeholder="E-mail address " class="sm:mb-3 border-[2px] p-3 sm:w-48   h-12 w-[250px] rounded-md" required>
-                   <p class= " sm:text-xs   text-white mb-4 mt-0">Don't have an accouunt? <span class="underline text-white" ><a href="./index copy.html">Sign up</a></span></p>
+                   <p class= " sm:text-xs   text-white mb-4 mt-0">Don't have an accouunt? <span class="underline text-white" ><a href="./registration_page.html">Sign up</a></span></p>
                 </div>
                 <div>
                    <input type="password" placeholder="Password" class="border-[2px] p-3  w-[250px] rounded-md h-12 sm:w-48" required>
@@ -64,12 +85,12 @@
        
         
     
-        <button class="p-3 mt-5 shadow-lg bg-[#291d87d7] shadow-blue-200  text-white border-2 rounded-md" ><a href="./landing_page.html">Login</a></button>
+        <button class="p-3 mt-5 shadow-lg bg-[#291d87d7] shadow-blue-200  text-white border-2 rounded-md" >Login</button>
         </form>
         
         
         </section>
 
-
+        <script src="./tail.js"></script>
 </body>
 </html>
