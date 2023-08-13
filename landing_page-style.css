@@ -93,12 +93,13 @@ a{
 /** search area style */
 
 .search_bx {
-    width: 100%;
+    width: 85%;
     height: 3rem;
     max-height: 3.5rem;
     display: flex;
     align-items: center;
     position: relative;
+    margin: auto;
     margin-top: 4rem;
     justify-content: space-between;
     padding: 4px 40px;
