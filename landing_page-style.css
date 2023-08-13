@@ -93,7 +93,7 @@ a{
 /** search area style */
 
 .search_bx {
-    width: 85%;
+    width: 80%;
     height: 3rem;
     max-height: 3.5rem;
     display: flex;
@@ -171,6 +171,7 @@ a{
 .all_content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 90%;
     width: 90%;
     gap: 3rem;
@@ -187,6 +188,7 @@ a{
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
+    max-width: 100%;
 }
 .sidebar_cat {
    position: relative;
@@ -240,7 +242,7 @@ a{
     height: 100%;
 }
 .values_card {
-    width: 100%;
+    max-width: 95%;
     background-color: #12203C;
     height: 12rem;
     position: relative;
@@ -290,8 +292,8 @@ a{
     position: relative;
     width: 100%;
     max-height: 28rem;
-    min-height: 200px;
-    max-height: 250px;
+    min-height: 230px;
+    max-height: 270px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -304,6 +306,11 @@ a{
     justify-content: space-between;
     width: 100%;
     color: #323843;
+    padding: 0.5rem .3rem;
+    margin-bottom: -.7rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
 }
 .cat_title h2{
     font-size: 18px;
