@@ -8,7 +8,6 @@
 }
 body {
     background-color: aliceblue;
-
 }
 a{
     text-decoration: none;
@@ -158,20 +157,21 @@ a{
 }
 
 .hero {
-    width: 100%;
+    max-width: 90%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: auto;
+    
     gap: 1rem;
-    padding: 40px;
+    padding: 20px;
 
 }
 .all_content {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    width: 100%;
-    padding: 0 15px;
+    max-width: 90%;
+    width: 90%;
     gap: 3rem;
 }
 .all_content .banner_bx{
@@ -199,6 +199,7 @@ a{
    padding: 15px 5px;
    gap: 5px;
    border-radius: 5px;
+   overflow: hidden;
 
 }
 .side_cat {
@@ -222,6 +223,7 @@ a{
     font-weight: 600;
     font-size: 15px;
     cursor: pointer;
+    min-width: 200px;
 }
 .cat_icon_img {
     width: 20px;
