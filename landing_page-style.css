@@ -354,9 +354,9 @@ a{
     font-weight: 800;
     position: absolute;
     top: 5px;
-    left: 15px;
-    color: azure;
-    background-color: #323843;
+    left: 10px;
+    color: #12203C;
+    background-color: rgb(103, 249, 103);
     padding: 5px 10px;
     border-radius: 3px;
 }
@@ -375,7 +375,7 @@ a{
 }
 .footer .email_support {
     margin-top: 30px;
-    width: 35%;
+    width: 30%;
     height: 90%;
     display: flex;
     justify-content: space-around;
@@ -383,6 +383,7 @@ a{
     position: relative;
     padding: 20px 0;
     margin-right: auto;
+    gap: 10px;
 }
 .footer_icon {
     width: 11rem;
@@ -390,7 +391,7 @@ a{
     top: -50px;
     left: -10px;
     z-index: 100;
-    margin-left: 15px;
+    margin-left: 2rem
 }
 .newsletter_title {
    font-size: 16px;
@@ -398,11 +399,15 @@ a{
 }
 .inp_subs {
     width: 90%;
+    max-height: 5rem;
     display: flex;
     outline: none;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 .subscribe_input {
     height: 2rem;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     border-radius: 3px;
@@ -411,6 +416,7 @@ a{
 }
 .sub_btn {
     width: 7rem;
+    height: 100%;
     background-color: rgb(75, 246, 107);
     border: 1px solid #12203C;
     border-radius: 3px;
@@ -423,6 +429,8 @@ a{
 .socials {
     display: flex;
     gap: 20px;
+    height: 100%;
+    margin-top: 30px;
 }
 .socials li a img{
     width: 20px;
