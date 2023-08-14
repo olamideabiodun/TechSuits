@@ -32,8 +32,8 @@ a{
 }
 
 .main-logo {
-    width: 150px;
-    max-width:200px;
+    width: 200px;
+    max-width:250px;
     height: auto;
     cursor: pointer;
     background-blend-mode: transparent;
@@ -133,9 +133,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
-    border-left: 1px solid #130c48;
-    border-radius: 4px;
+    padding: 0 20px 0 20px;
+    border-left: 1px solid #12203C;
+    background-color: #f9f6f6;
+    border-radius: 2px;
     cursor: pointer;
 }
 .search_icon {
@@ -442,7 +443,7 @@ a{
     align-items: flex-start;
     padding: 20px;
     justify-content: space-around;
-    gap: 40px;
+    gap: 5.5rem;
 
     
 }
