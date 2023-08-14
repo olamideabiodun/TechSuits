@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tail.css">
     <link rel="shortcut icon" href="./icons/tech-logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Create you Account </title>
+    <title>Create your Account </title>
 </head>
 <body class="bg-gray-100 italic">
 
     <header>
         <nav class="fixed top-0 z-10 w-[100%] sm:justify-between md:justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
-            <div class="logo">
-                <img src="./icons/techsuit.jpg" class="h-10 w-[200px]" alt="">
-            </div>
+            <div>
+                <div class="logo">
+                  <img src="./icons/techsuit.jpg" class="h-10 w-[200px]" alt="">
+                </div>
+  
+                <!---------------------- smal screen nav ------------------------------->
+                <div class="small_nav  overflow-hidden h-0">
+                <div class="  overflow-hidden">
+                  <ul class="mt-7 flex flex-col text-[#130c48] gap-4 gap-y-4  font-bold">
+                      <li><a href="">Shop</a></li>
+                      <li><a href="">Category</a></li>
+                      <li><a href="">About</a></li>
+                  </ul>
+                  <div class=" ml-10  mt-5 flex-col flex  gap-y-4">
+                      <button class="p-1 w-[70px]   bg-[#130c48] text-white border-2  rounded-md" type="button"><a href="./login.html">Login</a></button>
+                      <button class="p-1 w-[70px] text-[#130c48] border-2 border-[#130c48] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
+                   </div>
+                </div>
+              </div>
+              </div>
             <div class="flex md:gap-6 lg:gap-28 ">
              <div class="links lg:block  md:block hidden">
                 <ul class="flex  text-[#130c48] gap-4  font-bold">
@@ -36,7 +53,8 @@
              </div>
             </div>
             </div>
-            <h1 class="text-[#130c48] font-bold text-2xl block lg:hidden md:hidden">=</h1>
+            <h1 onclick="show_nav()" class="open_nav text-[#130c48] cursor-pointer font-bold text-2xl block lg:hidden md:hidden"> = </h1>
+            <h1 onclick="close_nav()" class="close_nav sm:hidden text-[#130c48] cursor-pointer font-bold text-2xl block lg:hidden md:hidden"> X  </h1>
         </nav>
     </header>
     
@@ -84,6 +102,6 @@
 
 
 
-   
+   <script src="./tail.js"></script>
 </body>
 </html>
