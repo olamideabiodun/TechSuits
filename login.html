@@ -6,6 +6,7 @@
     <title>Log-in</title>
     <link rel="shortcut icon" href="./icons/tech-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./tail.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-center italic">
     <header>
@@ -17,7 +18,7 @@
 
               <!---------------------- smal screen nav ------------------------------->
               <div class="small_nav  overflow-hidden h-0">
-              <div class="  ">
+              <div class="  overflow-hidden">
                 <ul class="mt-7 flex flex-col text-[#130c48] gap-4 gap-y-4  font-bold">
                     <li><a href="">Shop</a></li>
                     <li><a href="">Category</a></li>
@@ -46,9 +47,9 @@
                 <button class="p-1 w-[70px] text-[#130c48] border-2 border-[#130c48] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
              </div>
             </div>
-            </div>
+            <!-- </div> -->
             <div>
-               <h1 onclick="show_nav()" class="open_nav text-[#130c48] cursor-pointer font-bold text-2xl block lg:hidden md:hidden"> = </h1>
+               <h1 onclick="show_nav()" class="open_nav text-[#130c48] cursor-pointer font-bold text-2xl sm:block lg:hidden md:hidden"> = </h1>
                <h1 onclick="close_nav()" class="close_nav sm:hidden text-[#130c48] cursor-pointer font-bold text-2xl block lg:hidden md:hidden"> X  </h1>
             </div>
         </nav>
@@ -73,11 +74,11 @@
         <form class=" " >
             <div class=" lg:flex justify-center md:flex ml-3 gap-1 lg:gap-10">
                 <div>
-                   <input type="email" placeholder="E-mail address " class="sm:mb-3 border-[2px] p-3 sm:w-48   h-12 w-[250px] rounded-md" required>
-                   <p class= " sm:text-xs   text-white mb-4 mt-0">Don't have an accouunt? <span class="underline text-white" ><a href="./registration_page.html">Sign up</a></span></p>
+                   <input type="email" placeholder="E-mail address " class="sm:mb-3 border-[2px] p-3 sm:w-48 bg-transparent   h-12 w-[250px] rounded-md" required>
+                   <p class= " sm:text-xs   text-white mb-4 mt-0">Don't have an accouunt? <span class="underline text-white" ><a href="./index copy.html">Sign up</a></span></p>
                 </div>
                 <div>
-                   <input type="password" placeholder="Password" class="border-[2px] p-3  w-[250px] rounded-md h-12 sm:w-48" required>
+                   <input type="password" placeholder="Password" class="border-[2px] p-3  w-[250px] bg-transparent rounded-md h-12 sm:w-48" required>
                    <p class= " sm:text-xs  text-white mb-4 mt-3"><a href="./forget.html">Forget password?</a></p>
                </div>
         </div>
@@ -85,7 +86,7 @@
        
         
     
-        <button class="p-3 mt-5 shadow-lg bg-[#291d87d7] shadow-blue-200  text-white border-2 rounded-md" >Login</button>
+        <button class="p-3 mt-5  bg-[#291d87d7] text-white border-2 rounded-md" >Login</button>
         </form>
         
         
