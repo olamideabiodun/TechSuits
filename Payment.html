@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../TechSuits//tail.js" ></script>
+</head>
+<body>
+    <header>
+        <nav class="fixed top-0 z-10 w-[100%] sm:justify-between md:justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
+            <div>
+              <div class="logo">
+                <img src="./icons/techsuit.jpg" class="h-10 w-[200px]" alt="">
+              </div>
+
+              <!---------------------- smal screen nav ------------------------------->
+              <div class="small_nav  overflow-hidden h-0">
+              <div class="  overflow-hidden">
+                <ul class="mt-7 flex flex-col text-[#12203C] gap-4 gap-y-4  font-bold">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                <div class=" ml-10  mt-5 flex-col flex  gap-y-4">
+                    <button class="p-1 w-[70px]   bg-[#12203C] text-white border-2  rounded-md" type="button"><a href="./login.html">Login</a></button>
+                    <button class="p-1 w-[70px] text-[#12203C] border-2 border-[#12203C] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
+                 </div>
+              </div>
+            </div>
+            </div>
+            
+            <div class="flex md:gap-6 lg:gap-28 ">
+             <div class="links lg:block  md:block hidden">
+                <ul class="flex text-[#12203C] gap-4  font-bold">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                
+             </div>
+             <div class=" m-0 lg:block  md:block sm:hidden">
+             <div class="  flex gap-2">
+                <button class="p-1 w-[70px]   bg-[#12203C] text-white border-2  rounded-md" type="button"><a href="./login.html">Login</a></button>
+                <button class="p-1 w-[70px] text-[#12203C] border-2 border-[#12203C] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
+             </div>
+            </div>
+            <!-- </div> -->
+            <div>
+               <h1 onclick="show_nav()" class="open_nav text-[#12203C] cursor-pointer font-bold text-2xl sm:block lg:hidden md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </h1>
+               <h1 onclick="close_nav()" class="close_nav sm:hidden text-[#12203C] cursor-pointer font-bold text-2xl   lg:hidden md:hidden"> X  </h1>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <section class="flex w-[80%] space-x-7 mx-auto mt-32">
+        <div class="space-y-5 w-[50%]">
+             <nav
+                        class="space-x-6 text-lg p-6 rounded-b-lg flex justify-center shadow-neutral-400 shadow-lg"
+                    >
+                    <a href="" class="text-[#655A5A]" class="text-[#00AE11] font-semibold"  >Address</a>
+                    <a href="" class="text-[#655A5A]" >Cart</a>
+                        <a href="" class="text-[#00AE11] font-semibold" >Payment</a>
+                        <a href="" class="text-[#655A5A]">Review</a>
+            </nav>
+
+            <div class="text-center font-semibold  mt-3">Please Select A Paymeny Method </div>
+
+            <div class="w-[70%]">
+                <div action="" class="flex space-x-5 text-neutral-900">
+                     <div class="group border flex-1  rounded-lg p-2 border-neutral-700 ">
+                    <button type="text" class="w-full focus:outline-none">Visa</button>
+                </div>
+                     <div class="group border  flex-1 rounded-lg p-2 border-neutral-700 ">
+                    <button type="text" class="w-full focus:outline-none">Paypal</button>
+                </div>
+                     <div class="group border flex-1  rounded-lg p-2 border-neutral-700 ">
+                    <button type="text" class="w-full focus:outline-none" placeholder="Enter your Full Name">Crypto</button>
+                </div>
+                </div>
+            </div>
+            <div class="md:w-[60%] pt-3">
+                <form action="" class="flex flex-col space-y-4">
+                    <div class="space-y-2">
+                        <label for="">Card Number</label>
+                         <div class="group border  rounded-lg p-2 border-neutral-700 text-slate-600">
+                        <input type="text" class="w-full focus:outline-none">
+                    </div>
+
+                    </div>
+                   <div class="space-y-2">
+                        <label for="">Card Holder Name</label>
+                         <div class="group border  rounded-lg p-2 border-neutral-700 text-slate-600">
+                        <input type="text" class="w-full focus:outline-none">
+                    </div>
+
+                    </div>
+                    <div class="flex space-x-12">
+
+                         <div class="space-y-2">
+                        <label for="">Expiry Date</label>
+                         <div class="group border  rounded-lg p-2 border-neutral-700 text-slate-600">
+                        <input type="text" class="w-full focus:outline-none">
+                    </div>
+
+                    </div> <div class="space-y-2">
+                        <label for="">CVV</label>
+                         <div class="group border  rounded-lg p-2 border-neutral-700 text-slate-600">
+                        <input type="text" class="w-full focus:outline-none">
+                    </div>
+
+                    </div>
+
+                    </div>
+                   
+    
+                    <div class="flex pt-6">
+                       <button class="w-full rounded-lg p-3 text-white font-medium text-lg bg-[#00AE11]" >Proceed</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!------------------------ Form Ends here... ------------------------>
+         <div class="space-y-6">
+             <div class="card flex rounded-lg shadow-xl">
+                        <div class="flex  md:flex-row space-x-4">
+                            <div class="">
+                                <img
+                                    class="w-full max-h-[10rem] object-cover md:w-40 rounded-b-xl md:rounded-none"
+                                    src="./icons/Frame 142 (1).png"
+                                    alt=""
+                                />
+                            </div>
+                            <div
+                                class="flex flex-col text-[#655A5A] pt-7 space-y-2"
+                            >
+                                <h2
+                                    class="font-bold md:text-base md:text-[#655A5A] text-[#494343] text-4xl"
+                                >
+                                    Dell Laptop
+                                </h2>
+                                <p class="">Naomi Rz Brand New</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center justify-between p-6 flex-col  md:pl-4"
+                        >
+                          
+                            <div class="text-[#655A5A] font-bold">$120,000</div>
+                            <div class="text-red-400">Remove</div>
+                            
+                            <div class=" flex space-x-2">
+                                <button
+                                    class="bg-green-500 w-[20px] rounded text-white font-semibold px-3 flex justify-center"
+                                >
+                                    -
+                                </button>
+                                <p class="font-semibold text-[#655A5A] text-lg">
+                                    1
+                                </p>
+                                <button
+                                    class="bg-green-500 w-[20px] rounded text-white font-semibold px-3 items-center flex justify-center"
+                                >
+                                    +
+                                </button>
+                            </div>
+             
+                        </div>
+                    </div>
+             <div class="card flex rounded-lg shadow-xl">
+                        <div class="flex  md:flex-row space-x-4">
+                            <div class="">
+                                <img
+                                    class="w-full max-h-[10rem] object-cover md:w-40 rounded-b-xl md:rounded-none"
+                                    src="./icons/Frame 142 (1).png"
+                                    alt=""
+                                />
+                            </div>
+                            <div
+                                class="flex flex-col text-[#655A5A] pt-7 space-y-2"
+                            >
+                                <h2
+                                    class="font-bold md:text-base md:text-[#655A5A] text-[#494343] text-4xl"
+                                >
+                                    Dell Laptop
+                                </h2>
+                                <p class="">Naomi Rz Brand New</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center justify-between p-6 flex-col  md:pl-4"
+                        >
+                          
+                            <div class="text-[#655A5A] font-bold">$120,000</div>
+                            <div class="text-red-400">Remove</div>
+                            
+                            <div class=" flex space-x-2">
+                                <button
+                                    class="bg-green-500 w-[20px] rounded text-white font-semibold px-3 flex justify-center"
+                                >
+                                    -
+                                </button>
+                                <p class="font-semibold text-[#655A5A] text-lg">
+                                    1
+                                </p>
+                                <button
+                                    class="bg-green-500 w-[20px] rounded text-white font-semibold px-3 items-center flex justify-center"
+                                >
+                                    +
+                                </button>
+                            </div>
+             
+                        </div>
+                    </div>
+             <div class="card flex rounded-lg shadow-xl">
+                        <div class="flex  md:flex-row space-x-4">
+                            <div class="">
+                                <img
+                                    class="w-full max-h-[10rem] object-cover md:w-40 rounded-b-xl md:rounded-none"
+                                    src="./icons/Frame 142 (1).png"
+                                    alt=""
+                                />
+                            </div>
+                            <div
+                                class="flex flex-col text-[#655A5A] pt-7 space-y-2"
+                            >
+                                <h2
+                                    class="font-bold md:text-base md:text-[#655A5A] text-[#494343] text-4xl"
+                                >
+                                    Dell Laptop
+                                </h2>
+                                <p class="">Naomi Rz Brand New</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center justify-between p-6 flex-col  md:pl-4"
+                        >
+                          
+                            <div class="text-[#655A5A] font-bold">$120,000</div>
+                            <div class="text-red-400">Remove</div>
+                            
+                            <div class=" flex space-x-2">
+                                <button
+                                    class="bg-green-500 w-[20px] rounded text-white font-semibold px-3 flex justify-center"
+                                >
+                                    -
+                                </button>
+                                <p class="font-semibold text-[#655A5A] text-lg">
+                                    1
+                                </p>
+                                <button
+                                    class="bg-green-500 w-[20px] rounded text-white font-semibold px-3 items-center flex justify-center"
+                                >
+                                    +
+                                </button>
+                            </div>
+             
+                        </div>
+                    </div>
+      
+
+
+                    <!-- Card Ends Here... -->
+
+                    <div class="mx-auto w-full">
+                <div
+                    class="p-6 px-8 rounded-lg shadow-lg shadow-[#767575] space-y-5"
+                >
+                    <div class="flex justify-between">
+                        <p>Sub-Total</p>
+                        <p class="font-bold">$120.000</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p>Shiping Charges</p>
+                        <p class="font-bold">$120.000</p>
+                    </div>
+                    <div class="flex justify-between text-xl">
+                        <p class="font-extrabold text-lg">Total</p>
+                        <p class="font-extrabold ">$120.000</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-white font-semibold p-3 px-7 rounded bg-[#00AE11]"
+                        >
+                            Proceed.
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    </section>
+    
+    
+</body>
+</html>
