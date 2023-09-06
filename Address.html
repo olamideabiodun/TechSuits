@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../TechSuits//tail.js" ></script>
 </head>
 <body>
     <header>
-        <nav class="fixed top-0 z-10 w-[100%] sm:justify-between md:justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
+        <nav class="fixed top-0 z-10 w-[100%] justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
             <div>
               <div class="logo">
                 <img src="./icons/techsuit.jpg" class="h-10 w-[200px]" alt="">
               </div>
 
               <!---------------------- smal screen nav ------------------------------->
-              <div class="small_nav  overflow-hidden h-0">
+              <div class="small_nav transition-all overflow-hidden h-0">
               <div class="  overflow-hidden">
-                <ul class="mt-7 flex flex-col text-[#12203C] gap-4 gap-y-4  font-bold">
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Category</a></li>
-                    <li><a href="">About</a></li>
+                <ul class="mt-7    flex flex-col text-[#12203C] gap-4 gap-y-4  font-bold">
+                    <li class=" hover:underline  hover:translate-x-2"><a href="">Shop</a></li>
+                    <li class=" hover:underline hover:translate-x-2"><a href="">Category</a></li>
+                    <li class=" hover:underline hover:translate-x-2"><a href="">About</a></li>
                 </ul>
                 <div class=" ml-10  mt-5 flex-col flex  gap-y-4">
-                    <button class="p-1 w-[70px]   bg-[#12203C] text-white border-2  rounded-md" type="button"><a href="./login.html">Login</a></button>
-                    <button class="p-1 w-[70px] text-[#12203C] border-2 border-[#12203C] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
-                 </div>
+                    <button class="p-1 w-[70px]   bg-[#12203C] transition-all text-white border-2 hover:bg-white hover:border-[#12203C] hover:text-[#12203C]  rounded-md" type="button"><a href="./login.html">Login</a></button>
+                    <button class="p-1 w-[70px] text-[#12203C] transition-all border-2 border-[#12203C] hover:bg-[#12203C] hover:text-white rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
+                </div>
               </div>
             </div>
             </div>
@@ -40,21 +39,22 @@
                 </ul>
                 
              </div>
-             <div class=" m-0 lg:block  md:block sm:hidden">
+             <div class=" m-0 lg:block  md:block hidden">
              <div class="  flex gap-2">
-                <button class="p-1 w-[70px]   bg-[#12203C] text-white border-2  rounded-md" type="button"><a href="./login.html">Login</a></button>
-                <button class="p-1 w-[70px] text-[#12203C] border-2 border-[#12203C] rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
-             </div>
+                <button class="p-1 w-[70px]   bg-[#12203C] transition-all text-white border-2 hover:bg-white hover:border-[#12203C] hover:text-[#12203C]  rounded-md" type="button"><a href="./login.html">Login</a></button>
+                    <button class="p-1 w-[70px] text-[#12203C] transition-all border-2 border-[#12203C] hover:bg-[#12203C] hover:text-white rounded-md" type="button"><a href="./registration_page.html">Sign up</a></button>
+            </div>
             </div>
             <!-- </div> -->
             <div>
-               <h1 onclick="show_nav()" class="open_nav text-[#12203C] cursor-pointer font-bold text-2xl sm:block lg:hidden md:hidden">
+               <h1 onclick="show_nav()" class="open_nav transition-all text-[#12203C] cursor-pointer  text-2xl block lg:hidden md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
                 </h1>
-               <h1 onclick="close_nav()" class="close_nav sm:hidden text-[#12203C] cursor-pointer font-bold text-2xl   lg:hidden md:hidden"> X  </h1>
+               <h1 onclick="close_nav()" class="close_nav transition-all   text-[#12203C] cursor-pointer font-bold text-2xl hidden"> X  </h1>
             </div>
         </nav>
     </header>
+
 
     <section class="flex  flex-col space-y-16 lg:space-y-0 lg:flex-row w-[90%] md:w-[80%] md:space-x-7 mx-auto mt-32">
         <div class="space-y-5 lg:w-[45%]">
@@ -265,6 +265,7 @@
 
     </section>
     
+    <script src="./tail.js" ></script>
     
 </body>
 </html>
