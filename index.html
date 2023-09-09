@@ -60,91 +60,101 @@
    
      <!-- <-- Search bar -!> -->
 
-     <div class="search_bx">
-         <div class="search_bar">
-          <img src="icons/search-normal.png" alt="search icon" class="search_icon">
-          <input type="text" class="search_text" placeholder="Search products, Brands, Categories">
-          <div class="search_cat_bx">
-            <ul class="seach_cat_items">
-              <li class="all_cats">All categories</li>
-            </ul>
+     <div class="search_bx mt-24 w-[80%] mx-auto  flex items-center space-x-5" >
+         <div class="search_bar flex justify-between space-x-2 border-gray-700 px-5  rounded-xl border-2 flex-auto items-center">
+          <div class="flex items-center space-x-3 flex-1">
+              <img src="icons/search-normal.png" class="h-6" alt="search icon" class="search_icon">
+              <input type="text" class="w-full p-3 focus:outline-none border-gray-700 px-5  border-r-2" placeholder="Search products, Brands, Categories">
+          </div>
+          <div class="flex cursor-pointer items-center space-x-1 py-3 ">
+              <div class="all_cats">All categories</div>
             <img src="icons/arrow-down.png" alt="" class="cat_arrow_down">
           </div>
           
          </div>
 
-         <div id="search_btn">
-            <button class="search_btn"><a href="#">Search</a></button>
-         </div>
+            <a class="px-8 p-3 border-2 border-gray-700  rounded-xl " href="#">Search</a>
+         
      </div>
-    <section class="hero">
-       
-       <div class="all_content">
-        <div class="banner_sidebar">
-            <div class="sidebar_cat">
-                <div class="cat_all side_cat">
+
+
+
+
+
+
+
+    <section class="w-[90%] md:w-[80%] mx-auto mt-3">
+
+        <div class="flex pt-3  lg:space-x-6">
+
+            <div class="sidebar_cat hidden lg:flex flex-col  p-5 min-w-[20%] shadow-lg space-y-6 rounded-lg h-[60vh] text-gray-500 shadow-gray-500">
+                <div class="cat_all side_cat border-b font-semibold pb-2 border-slate-800 flex space-x-6">
+
+
                   <div class="cat_icon">
                       <img src="icons/textalign-justifycenter.png" alt="category Icon" class="cat_icon_img">
                   </div>
-                  <h4><a href="#">All Categories</a></h4>
+                  <h4><a href="#">Categories</a></h4>
                 </div>
-                <div class="cat_products side_cat">
+
+
+                <div class="cat_products side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/Vector.png" alt="products Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">All Products</a></h4>
                 </div>
-                <div class="cat_health side_cat">
+                <div class="cat_health side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/health.png" alt="health Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Health & Beauty</a></h4>
                 </div>
-                <div class="cat_home_office side_cat">
+                <div class="cat_home_office side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/home.png" alt="home Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Home & Office</a></h4>
                 </div>
-                <div class="cat_code side_cat">
+                <div class="cat_code side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/code.png" alt="tech products Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Tech Products</a></h4>
                 </div>
-                <div class="cat_appliances side_cat">
+                <div class="cat_appliances side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/apple.png" alt="appliances Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Appliances</a></h4>
                 </div>
-                <div class="cat_fashion side_cat">
+                <div class="cat_fashion side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/smileys.png" alt="fashion Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Fashion</a></h4>
                 </div>
-                <div class="cat_body side_cat">
+                <div class="cat_body side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/smileys.png" alt="body products Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Body Products</a></h4>
                 </div>
-                <div class="cat_goods side_cat">
+                <div class="cat_goods side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/ranking.png" alt="goods Icon" class="cat_icon_img">
                       
                   </div>
                   <h4><a href="#">Shopping Goods</a></h4>
                 </div>
-                <div class="cat_other side_cat">
+                <div class="cat_other side_cat flex space-x-6 font-semibold">
                   <div class="cat_icon">
                       <img src="icons/Vector.png" alt="other Icon" class="cat_icon_img">
                       
@@ -152,182 +162,404 @@
                   <h4><a href="#">Other Categories</a></h4>
                 </div>
              </div>
-             <div class="banner_bx">
-                <img src="icons/image.png" alt="banner" class="banner_img">
-             </div>
-        </div>
-         
-         <div class="values_card">
-            <div class="item item1">
+
+
+
+             <div class="space-y-14">
+                 
+                 <img src="icons/image.png" alt="banner" class="banner_img h-[60vh] object-cover  w-[100%]">
+
+                 <section class="flex px-6 flex-col lg:flex-row text-center lg:space-y-0 space-y-10 lg:space-x-10 p-20  bg-[#12203C] text-white ">
+            <div class="item item1 flex flex-col items-center space-y-5">
                 <img src="icons/star.png" alt="item logo" class="item_logo">
-                <h2>Great value Items</h2>
-                <h4>Nulla Lorem mollit cupidatat irure. 
-                    Laborum magna nulla duis ullamco cillum dolor. Voluptate </h4>
+                <h2 class="text-3xl font-bold">Great value Items</h2>
+                <p class="leading-9 w-[80%]">Nulla Lorem mollit cupidatat irure. 
+                    Laborum magna nulla duis ullamco cillum dolor. Voluptate </p>
             </div>
-            <div class="item item2">
+            <div class="item item2 flex flex-col items-center space-y-5">
                 <img src="icons/credit.png" alt="item logo" class="item_logo">
-                <h2>Safe Payment</h2>
-                <h4>Nulla Lorem mollit cupidatat irure. 
-                    Laborum magna nulla duis ullamco cillum dolor. Voluptate </h4>
+                <h2 class="text-3xl font-bold">Safe Payment</h2>
+                <p class="leading-9">Nulla Lorem mollit cupidatat irure. 
+                    Laborum magna nulla duis ullamco cillum dolor. Voluptate </p>
             </div>
-            <div class="item item3">
+            <div class="item item3 flex flex-col items-center space-y-5">
                 <img src="icons/delivery.png" alt="item logo" class="item_logo">
-                <h2>Fast Delivery</h2>
-                <h4>Nulla Lorem mollit cupidatat irure. 
-                    Laborum magna nulla duis ullamco cillum dolor. Voluptate </h4>
+                <h2 class="text-3xl font-bold">Fast Delivery</h2>
+                <p class="leading-9 w-[80%]">Nulla Lorem mollit cupidatat irure. 
+                    Laborum magna nulla duis ullamco cillum dolor. Voluptate </p>
             </div>
-         </div>
-         <div class="categories_section">
-            <div class="main_cat cat">
-                <div class="cat_title">
-                   <h2>Explore Popular Categories</h2>
-                   <a href="#">See All</a>
-                </div>
-                <div class="cat_elements">
-                <div class="cat_ele_bx">
-                       <div class="element_img"><img src="" alt=""></div>
-                       <h2 class="element_title">Tech Products</h2>
-                   </div>
-                <div class="cat_ele_bx">
-                    <div class="element_img"><img src="" alt=""></div>
-                    <h2 class="element_title">Appliances</h2>
-                </div>
-                <div class="cat_ele_bx">
-                    <div class="element_img"><img src="" alt=""></div>
-                    <h2 class="element_title">Fashion</h2>
-                </div>
-                <div class="cat_ele_bx">
-                    <div class="element_img"><img src="" alt=""></div>
-                    <h2 class="element_title">Sporting Goods</h2>
-                </div>
-                </div>
+         </section>
 
-                
-            </div>
 
-            <div class="top_app_cat cat">
-                <div class="cat_title">
-                   <h2>Top Appliances</h2>
-                   <a href="#">See All</a>
-                </div>
-                <div class="cat_elements">
-                    <div class="cat_ele_bx">
-                       <div class="element_img"><img src="" alt=""></div>
-                       <h2 class="element_title">Item 0</h2>
-                       <h3 class="price_tag">$100</h3>
-                    </div>
-                <div class="cat_ele_bx">
-                    <div class="element_img"><img src="" alt=""></div>
-                    <h2 class="element_title">Item 1</h2>
-                    <h3 class="price_tag">$100</h3>
-                    </div>
-                <div class="cat_ele_bx">
-                    <div class="element_img"><img src="" alt=""></div>
-                    <h2 class="element_title">Item 2</h2>
-                    <h3 class="price_tag">$100</h3>
-                    </div>
-                <div class="cat_ele_bx">
-                    <div class="element_img"><img src="" alt=""></div>
-                    <h2 class="element_title">Item 3</h2>
-                    <h3 class="price_tag">$100</h3>
-                </div>
-         </div>
-    </div>
-         <div class="tech_cat cat">
-            <div class="cat_title">
-               <h2>Best Tech Products</h2>
-               <a href="#">See All</a>
-            </div>
-            <div class="cat_elements">
-                <div class="cat_ele_bx">
-                   <div class="element_img"><img src="" alt=""></div>
-                   <h2 class="element_title">Item 0</h2>
-                   <h3 class="price_tag">$100</h3>
-                </div>
-            <div class="cat_ele_bx">
-                <div class="element_img"><img src="" alt=""></div>
-                <h2 class="element_title">Item 1</h2>
-                <h3 class="price_tag">$100</h3>
-                </div>
-            <div class="cat_ele_bx">
-                <div class="element_img"><img src="" alt=""></div>
-                <h2 class="element_title">Item 2</h2>
-                <h3 class="price_tag">$100</h3>
-                </div>
-            <div class="cat_ele_bx">
-                <div class="element_img"><img src="" alt=""></div>
-                <h2 class="element_title">Item 3</h2>
-                <h3 class="price_tag">$100</h3>
-            </div>
-     </div>
-    </div>
-    <div class="tech_cat cat">
-        <div class="cat_title">
-           <h2>More Collections</h2>
-           <a href="#">See All</a>
-        </div>
-        <div class="cat_elements">
-            <div class="cat_ele_bx">
-               <div class="element_img"><img src="" alt=""></div>
-               <h2 class="element_title">Item 0</h2>
-               <h3 class="price_tag">$100</h3>
-            </div>
-        <div class="cat_ele_bx">
-            <div class="element_img"><img src="" alt=""></div>
-            <h2 class="element_title">Item 1</h2>
-            <h3 class="price_tag">$100</h3>
-            </div>
-        <div class="cat_ele_bx">
-            <div class="element_img"><img src="" alt=""></div>
-            <h2 class="element_title">Item 2</h2>
-            <h3 class="price_tag">$100</h3>
-            </div>
-        <div class="cat_ele_bx">
-            <div class="element_img"><img src="" alt=""></div>
-            <h2 class="element_title">Item 3</h2>
-            <h3 class="price_tag">$100</h3>
-        </div>
- </div>
-    </section>
 
-    <footer class="footer">
-        <a href="">
-            <img src="icons/tech-suits-trans.png" alt="techsuits footer icon" class="footer_icon">
-        </a>
-        <div class="email_support">
-            <h3 class="newsletter_title">Subscribe to our news letter!</h3>
-            <div class="inp_subs">
-                <input type="text" class="subscribe_input" placeholder="Enter your email here...">
-                <button class="sub_btn"><a href="#">Subscribe</a></button>
+         
+                  <section class="categories_section space-y-10">
+
+                    
+                     <div class="main_cat cat space-y-5">
+                         <div class="cat_title flex justify-between text-gray-600 text-2xl">
+                            <h2>Explore Popular Categories</h2>
+                            <a href="#" class="font-semibold text-xl text-[#00AE11]">See All</a>
+                         </div>
+                         <!-- ----------------------grid11 Start--------------------------- -->
+                         <div class="cat_elements grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3" >
+                         <div class="card text-center text-gray-600 text-xl font-normal">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <h2 class="element_title">Tech Products</h2>
+                            </div>
+                         <div class="card text-center text-gray-600 text-xl">
+                                <div class="element_img"><img src="./icons/Frame 99 (1).png" alt="product image"></div>
+                                <h2 class="element_title">Tech Products</h2>
+                            </div>
+                         <div class="card text-center text-gray-600 text-xl">
+                                <div class="element_img"><img src="./icons/Frame 102.png" alt="product image"></div>
+                                <h2 class="element_title">Tech Products</h2>
+                            </div>
+                         <div class="card text-center text-gray-600 text-xl">
+                                <div class="element_img"><img src="./icons/Frame 102.png" alt="product image"></div>
+                                <h2 class="element_title">Tech Products</h2>
+                            </div>
+
+
+
+                         
+                     </div>    
+                     </div>
+         
+                     <div class="main_cat cat space-y-5">
+
+                         <div class="cat_title flex justify-between text-gray-600 text-2xl">
+                            <h2>Top Appliances</h2>
+                            <a href="#" class="font-semibold text-xl text-[#00AE11]">See All</a>
+                         </div>
+
+
+                         <!-- ----------------------grid12 Start--------------------------- -->
+                         <div class="cat_elements grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3" >
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         
+                        
+                         
+                     </div> 
+
+
+
+                     
+                     </div>
+
+
+
+
+                     <div class="main_cat cat space-y-5">
+
+                         <div class="cat_title flex justify-between text-gray-600 text-2xl">
+                            <h2>Best Tech Product Selling</h2>
+                            <a href="#" class="font-semibold text-xl text-[#00AE11]">See All</a>
+                         </div>
+
+
+                         <!-- ----------------------grid12 Start--------------------------- -->
+                         <div class="cat_elements grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3" >
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+
+                            
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 99.png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Fram 103.png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         
+                        
+                         
+                     </div>          
+                     </div>
+         
+
+
+                     <div class="main_cat cat space-y-5">
+
+                         <div class="cat_title flex justify-between text-gray-800 text-2xl">
+                            <h2>More Collections</h2>
+                            <a href="#" class="font-semibold text-xl text-[#00AE11]">See All</a>
+                         </div>
+
+
+                         <!-- ----------------------grid 3 Start--------------------------- -->
+                         <div class="cat_elements grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3" >
+                         <div class="card  text-gray-600 text-center   text-2xl">
+                                <div class="element_img"><img src="./icons/Frame 103.png" alt="product image"></div>
+                            
+                                    <h1>Samsung</h1>
+                                                                    
+                            </div>
+                         <div class="card  text-gray-600 text-center   text-2xl">
+                                <div class="element_img"><img src="./icons/Frame 103 (1).png" alt="product image"></div>
+                            
+                                    <h1>Acer</h1>
+                                                                    
+                            </div>
+                         <div class="card  text-gray-600 text-center   text-2xl">
+                                <div class="element_img"><img src="./icons/Fram 102.png" alt="product image"></div>
+                            
+                                    <h1>Dell</h1>
+                                                                    
+                            </div>
+                      
+                         <div class="card  text-gray-600 text-center   text-2xl">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                            
+                                    <h1>Hp</h1>
+                                                                    
+                            </div>
+                      
+                     </div> 
+                     
+                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+                     </div>
+
+
+                     
+                     <div class="main_cat cat space-y-5">
+
+                         <div class="cat_title flex justify-between text-gray-600 text-2xl">
+                            <h2>Top Appliances</h2>
+                            <a href="#" class="font-semibold text-xl text-[#00AE11]">See All</a>
+                         </div>
+
+
+                         <!-- ----------------------grid12 Start--------------------------- -->
+                         <div class="cat_elements grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3" >
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 103 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+
+                            
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Fram 103.png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Fram 102.png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         
+                        
+                         
+                     </div>          
+                     </div>
+
+
+                     <div class="main_cat cat space-y-5">
+
+                         <div class="cat_title flex justify-between text-gray-600 text-2xl">
+                            <h2>Best Price Appliances</h2>
+                            <a href="#" class="font-semibold text-xl text-[#00AE11]">See All</a>
+                         </div>
+
+
+                         <!-- ----------------------grid12 Start--------------------------- -->
+                         <div class="cat_elements grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3" >
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 103.png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+
+                            
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 104 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 105 (1).png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         <div class="card  text-gray-600 ">
+                                <div class="element_img"><img src="./icons/Frame 99.png" alt="product image"></div>
+                                <div class="element_title">
+                                    <h1>Item Name</h1>
+                                    <p class="font-semibold">$200</p>
+                                </div>
+                            </div>
+                         
+                        
+                         
+                     </div>          
+                     </div>
+         
+
+
+             </section>
+
             </div>
-            <ul class="socials">
-                <li><a href="#"><img src="icons/facebook.png" alt="facebook"></a></li>
-                <li><a href="#"><img src="icons/instagram.png" alt="facebook"></a></li>
-                <li><a href="#"><img src="icons/twitter.png" alt="facebook"></a></li>
-                <li><a href="#"><img src="icons/linkedin.png" alt="facebook"></a></li>
-            </ul>
         </div>
-        <div class="other_links">
-             <ul>
-                <li class="links_title"><a href="#">TechSuit</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer bg-[#12203C]  lg:items-center flex flex-col space-y-10 lg:space-y-0  lg:flex-row justify-between text-white py-20 px-20 mt-20">
+        <div class="email_support space-y-5">
+            <h1 class="text-4xl font-semibold my-3">Tech Suits</h1>
+            <h3 class="newsletter_title text-4xl font-semibold">Subscribe to our news letter!</h3>
+            <div class="inp_subs flex space-x-0 rounded">
+                <input type="text" class="subscribe_input rounded-l-md w-[70%] focus:outline-none text-gray-700 p-4" placeholder="Enter your email here...">
+                <button class="sub_btn bg-green-500 flex-auto rounded-r-md"><a href="#">Subscribe</a></button>
+            </div> 
+            <div>
+                <ul class="socials flex space-x-4  mt-8">
+                    <li><a href="#"><img src="icons/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="icons/instagram.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="icons/twitter.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="icons/linkedin.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+   
+             <ul class="space-y-5 text-lg" >
+                <li class="links_title font-bold text-xl"><a href="#">Tech Suits</a></li>
                 <li class="links"><a href="#">Blog</a></li>
                 <li class="links"><a href="#">Track order</a></li>
                 <li class="links"><a href="#">Privacy and Policy</a></li>
                 <li class="links"><a href="#">Products</a></li>
-             </ul>
-             <ul>
-                <li class="links_title"><a href="#">About us</a></li>
+            </ul>
+            
+            
+            <ul class="space-y-5 text-lg">
+                <li class="links_title font-bold text-xl"><a href="#">About us</a></li>
                 <li class="links"><a href="#">My account</a></li>
                 <li class="links"><a href="#">Shipping & Delivery</a></li>
                 <li class="links"><a href="#">contact and Support</a></li>
+                <li class="links"><a href="#">All product</a></li>
              </ul>
-             <ul>
+             <ul class="space-y-5 text-lg">
                 <li class="links"><a href="#">Terms and Conditionst</a></li>
                 <li class="links"><a href="#">FAQs</a></li>
                 <li class="links"><a href="#">ACCEPTED PAYMENTS</a></li>
-                <li class="links"><a href="./Cart.html">Address</a></li>
+                <li class="links"><a href="#" class="flex space-x-4 items-center"><span>   
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
+  <path d="M3 0C1.355 0 0 1.355 0 3V17C0 18.645 1.355 20 3 20H25C26.645 20 28 18.645 28 17V3C28 1.355 26.645 0 25 0H3ZM3 2H25C25.566 2 26 2.434 26 3V17C26 17.566 25.566 18 25 18H3C2.434 18 2 17.566 2 17V3C2 2.434 2.434 2 3 2ZM17.406 6.375C15.48 6.375 14.469 7.325 14.469 8.531C14.469 10.711 17.031 10.411 17.031 11.531C17.031 11.723 16.871 12.156 15.813 12.156C14.753 12.156 14.063 11.781 14.063 11.781L13.75 13.219C13.75 13.219 14.406 13.625 15.719 13.625C17.031 13.625 18.875 12.617 18.875 11.156C18.875 9.398 16.312 9.281 16.312 8.5C16.312 8.102 16.652 7.781 17.562 7.781C18.156 7.781 18.812 8.25 18.812 8.25L19.125 6.719C19.125 6.719 18.254 6.375 17.406 6.375ZM9.188 6.5L7.5 11.438C7.5 11.438 7.414 11.012 7.375 10.75C6.422 8.61 4.875 7.812 4.875 7.812L6.344 13.406H8.344L11.156 6.5H9.188ZM11.875 6.5L10.781 13.406H12.625L13.719 6.5H11.875ZM21.813 6.5L18.813 13.406H20.625L21 12.438H23.313L23.5 13.406H25.156L23.75 6.5H21.813ZM2.843 6.531C2.843 6.531 6.441 7.633 7.281 10.344L6.656 7.219C6.656 7.219 6.383 6.531 5.656 6.531H2.843ZM22.5 8.5L23.031 11.094H21.531L22.5 8.5Z" fill="white"/>
+</svg></span> <span>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+  <path d="M17.7913 6.07129C16.4642 6.07045 15.159 6.40901 13.9996 7.05479C12.8403 6.40901 11.535 6.07045 10.208 6.07129C8.10515 6.07129 6.08846 6.90663 4.60155 8.39354C3.11464 9.88046 2.2793 11.8971 2.2793 14C2.2793 16.1028 3.11464 18.1195 4.60155 19.6064C6.08846 21.0933 8.10515 21.9286 10.208 21.9286C11.535 21.9295 12.8403 21.5909 13.9996 20.9451C15.159 21.5909 16.4642 21.9295 17.7913 21.9286C19.8941 21.9286 21.9108 21.0933 23.3977 19.6064C24.8846 18.1195 25.72 16.1028 25.72 14C25.72 11.8971 24.8846 9.88046 23.3977 8.39354C21.9108 6.90663 19.8941 6.07129 17.7913 6.07129ZM10.208 20.762C8.41457 20.762 6.69463 20.0495 5.42651 18.7814C4.15839 17.5133 3.44596 15.7934 3.44596 14C3.44596 12.2066 4.15839 10.4866 5.42651 9.2185C6.69463 7.95038 8.41457 7.23796 10.208 7.23796C11.132 7.23796 12.0455 7.43162 12.889 7.80612C11.9613 8.55001 11.2125 9.4928 10.698 10.5648C10.1835 11.6369 9.91637 12.8108 9.91637 14C9.91637 15.1891 10.1835 16.363 10.698 17.4351C11.2125 18.5071 11.9613 19.4499 12.889 20.1938C12.0447 20.5681 11.1315 20.7616 10.208 20.762ZM13.9996 19.572C13.0991 18.9483 12.3633 18.1155 11.8553 17.1451C11.3473 16.1746 11.0823 15.0954 11.083 14C11.0821 12.9044 11.347 11.8249 11.855 10.8542C12.363 9.88352 13.0989 9.05055 13.9996 8.42679C14.8999 9.05103 15.6356 9.88407 16.1436 10.8546C16.6517 11.8252 16.9171 12.9044 16.9171 14C16.9171 15.0955 16.6517 16.1747 16.1436 17.1453C15.6356 18.1158 14.8999 18.9489 13.9996 19.5731V19.572ZM17.7913 20.762C16.8678 20.7616 15.9546 20.5681 15.1103 20.1938C16.038 19.4499 16.7868 18.5071 17.3013 17.4351C17.8158 16.363 18.0829 15.1891 18.0829 14C18.0829 12.8108 17.8158 11.6369 17.3013 10.5648C16.7868 9.4928 16.038 8.55001 15.1103 7.80612C15.9546 7.43186 16.8678 7.23833 17.7913 7.23796C19.5847 7.23796 21.3046 7.95038 22.5728 9.2185C23.8409 10.4866 24.5533 12.2066 24.5533 14C24.5533 15.7934 23.8409 17.5133 22.5728 18.7814C21.3046 20.0495 19.5847 20.762 17.7913 20.762Z" fill="white"/>
+</svg>
+</span> </a></li>
+                <li class="links"><a href="./Cart.html"><span>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="12" viewBox="0 0 80 12" fill="none">
+  <path d="M29.75 11.1609H37.0875L39.875 7.43646H32.5375L29.75 11.1609ZM0 8.90402V9.69329H10.225L10.8125 8.90402H0ZM21.6125 7.43646C20.525 7.43646 20.8625 6.99249 21.0375 6.75817C21.3875 6.28954 21.9875 5.4756 22.3375 5.0193C22.6875 4.563 22.6875 4.29169 21.9875 4.29169H15.6125L10.475 11.1732H22.9875C27.125 11.1732 29.425 8.39839 30.1375 7.43646H21.6125ZM61.3 6.58552L66.2125 0H58.4375L53.525 6.58552H61.3ZM11.9125 7.43646H0V8.22573H11.325L11.9125 7.43646ZM25.7875 4.15603C25.4375 4.62466 24.85 5.4386 24.5 5.90724C24.325 6.15389 23.9875 6.58552 25.075 6.58552H30.775C30.775 6.58552 31.6875 5.35228 32.4625 4.31635C33.5125 2.91045 32.55 0 28.8125 0H14.075L11.525 3.42842H25.45C26.15 3.42842 26.1375 3.69973 25.7875 4.15603ZM0 11.1609H9.1375L9.725 10.3716H0V11.1609ZM40.375 11.1609H47.7125L50.5 7.43646H43.1625C43.15 7.43646 40.375 11.1609 40.375 11.1609ZM68.125 11.1732H80V10.3839H68.7125L68.125 11.1732ZM70.9125 7.43646L70.325 8.22573H80V7.43646H70.9125ZM69.225 9.69329H80V8.90402H69.8125L69.225 9.69329ZM48.7 0L45.8875 3.77373H42.6125L45.425 0H38.0875L33.175 6.58552H51.125L56.0375 0H48.7ZM52.8875 7.43646C52.8875 7.43646 52.35 8.16407 52.0875 8.50938C51.1625 9.74263 51.975 11.1732 54.9875 11.1732H66.775L69.5625 7.43646H52.8875Z" fill="#F7FC06"/>
+</svg>
+</span></a></li>
              </ul>
         </div>
+ 
+
+
+       
+
+
     </footer>
     <script src="./tail.js"></script>
 </body>
