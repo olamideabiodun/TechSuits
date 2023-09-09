@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./icons/tech-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./item_page.css">
+   
+</head>
+<body>
+    <div id="nav">
+        <nav class="navigation">
+            
+            <div class="navs">
+                <div class="logo_bx">
+                    <a href="landing_page.html"><img src="./icons/techsuit.jpg" alt="Tech suits logo" class="main-logo" ></a>
+                </div>
+                <div class="hamburgger">
+                    <h1 onclick="show_nav()" class="open_nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                        </h1>
+                       <h1 onclick="close_nav()" class="close_nav"> X  </h1>
+                   
+                </div>
+            </div>
+            
+            <div class="items_login">
+            <ul class="menu_item">
+                <li><a href="">Shop</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+
+            <div class="icon">
+                <img src="./icons/ant-design_shopping-cart-outlined.svg" alt="">
+                <img src="./icons/iconoir_bell-notification.svg" alt="">
+                <img src="./icons/icon-park-outline_like.svg" alt="">
+                <img src="./icons/healthicons_ui-user-profile-outline.svg" alt="">
+            </div>
+          
+        </div>
+       
+
+
+        <!-- <div class="item_login"> -->
+            <ul class="menu_items">
+                <li><a href="">Shop</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+
+            <div class="icons">
+                
+                    <img src="./icons/ant-design_shopping-cart-outlined.svg" alt="">
+                    <img src="./icons/iconoir_bell-notification.svg" alt="">
+                    <img src="./icons/icon-park-outline_like.svg" alt="">
+                    <img src="./icons/healthicons_ui-user-profile-outline.svg" alt="">
+               
+            </div>
+        <!-- </div> -->
+        </nav>
+    </div>
+
+    <div class="sections">
+        <section class="section">
+        <!-- ------search Section ----------- -->
+        <div class="top-section">
+            <div class="search_bar">
+                <img src="./icons/bi_search.svg" alt="">
+              <input type="search" name="search" id="" placeholder="Search products, Brands, Categories e.t.c">
+              <select class="option" name="option" id="option_select">
+                
+                <option disabled selected >All Categories</option>
+                <option value="+">=</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+             </div>
+             
+             <!-- <input class="submit" type="submit"  value="Search"> -->
+             <input class="submit" type="button" value="Search">
+        </div>
+
+        <!-- ------Product Section ---------- -->
+        <div class="contents">
+            
+            <h3>Home/Category/Tech Project</h3>
+            <div class="content">
+                <!-- --------Left Top -------------- -->
+                <div class="left-top">
+                <div class="mini-images">
+                  <img src="./icons/first.svg" width="100px" height="100px" alt="">
+                  <img src="./icons/second.svg" width="100px" height="96px" alt="">
+                  <img src="./icons/third.svg" width="100px" height="100px" alt="">
+                  <img src="./icons/fourth.svg" width="100px" height="100px" alt="">
+                </div>
+                <div class="image">
+                    <img src="./icons/fifth.svg" width="180px" height="426px" alt="">
+                </div>
+                </div>
+                <!-- ------Right Bottom ------------ -->
+                <div class="right-bottom">
+                <h4>Product Name</h4>
+                <h4>$200</h4><br>
+                <h4>
+                    <img src="./icons/ant-design_star-filled.svg" alt=""> 
+                    <img src="./icons/ant-design_star-filled.svg" alt=""> 
+                    <img src="./icons/ant-design_star-filled.svg" alt=""> 
+                    <img src="./icons/ant-design_star-filled.svg" alt=""> 
+                    <img src="./icons/ant-design_star-filled.svg" alt=""> 
+                    <span>(200 ratings)</span></h4>
+                <div class="border"></div>
+                <p>Key Features</p><br>
+                <p>Operating system windows 10</p>
+                <p>Operating system windows 10</p>
+                <p>Operating system windows 10</p>
+                <p>Operating system windows 10</p>
+                <p>Operating system windows 10</p>
+                <p>Operating system windows 10</p>
+                <h3>Quality</h3><br>
+                <p>2</p>
+                <input type="button" value="Add to cart">
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- ----------------Description , Specifications and Ratings------------- -->
+        <div class="container">
+            <div class="left">
+                <div class="description">
+                <h4>Descriptions</h4>
+                <div class="border"></div>
+                <article>
+                    <p> Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Minima harum, 
+                         animi tempore molestiae officiis autem sit similique 
+                         sed ipsam vel ut qui, facilis fugit dolorum a 
+                         suscipit quo aut iste perferendis repellendus 
+                         beatae. Officiis vel, molestias earum eveniet 
+                         harum vero laborum adipisci. Consequuntur assumenda, 
+                         nobis possimus quis consequatur repellendus explicabo.
+                    </p>
+                </article>
+                </div><br>
+                <div class="specifications">
+                <h4>Specifications</h4>
+                <div class="border"></div>
+                <div class="lists">
+                    <p>SKU:<span> HpCfgsy245VfFgdjs670BB</span></p>
+                    <p>Product line:<span> Fannis Production</span></p>
+                    <p>Model:<span> 15</span></p>
+                    <p>Weight(kg):<span> 2.1</span></p>
+                    <p>Color:<span> Black</span></p>
+                    <p>Material:<span> Plastic</span></p>
+                </div>
+                </div>
+            </div>
+            <aside>
+                <div class="aside-top">
+                    <h3>Seller Information</h3><br>
+                    <p><img src="./icons/ant-design_star-filled.svg" alt=""> 
+                        <img src="./icons/ant-design_star-filled.svg" alt="">
+                        <img src="./icons/ant-design_star-filled.svg" alt="">
+                        <img src="./icons/ant-design_star-filled.svg" alt="">
+                        <img src="./icons/ant-design_star-filled.svg" alt="">
+                        (200 ratings)</p>
+                    <p>200 folowers</p>
+                    <div class="border"></div>
+                    <h4>Seller's Performance</h4><br>
+                    <p>Order Fulfillment rates:  Good</p>
+                    <p>Quality score:  Good</p><br>
+
+                    <p class="button" >Follow</p>
+                </div>
+                <div class="aside-top">
+                    <p>Do you have any question about this product?</p><br>
+                    <p class="button" >Contact Seller</p>
+                </div>
+            </aside>
+        </div>
+
+        <div class="ratings">
+            <h4>Ratings & Reviews</h4>
+            <div class="border"></div>
+            <div class="ratings_content">
+                <div class="left-top">
+                    <div class="rate">
+                        <h2>4.3</h2>
+                        <div class="stars">
+                            <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                                <img src="./icons/ant-design_star-filled.svg" alt="">
+                                <img src="./icons/ant-design_star-filled.svg" alt="">
+                                <img src="./icons/ant-design_star-filled.svg" alt="">
+                                <img src="./icons/ant-design_star-filled.svg" alt="">
+                                <br> (200 ratings)</p>
+                        </div>
+                       
+                    </div>
+                    <div class="ratings_rates">
+                        <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled (1).svg" alt="">
+                              75%</p>
+                        <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled (1).svg" alt="">
+                              75%</p>
+                        <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled (1).svg" alt="">
+                              75%</p>
+                        <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled.svg" alt="">
+                            <img src="./icons/ant-design_star-filled (1).svg" alt="">
+                              75%</p>
+                       
+                    </div>
+                   
+                </div>
+                <div class="right-bottom">
+                    <div class="right-bottom-content">
+                        <div class="image-part">
+                            <img src="./icons/elipse.svg" width="50px" height="50px"  alt="">
+                            <div class="about">
+                                <p>Name</p>
+                                <p>Location</p>
+                            </div>
+                        </div>
+                        <div class="article" role="article">
+                            <h2>Perfect</h2>
+                            <p>  Lorem ipsum dolor, sit amet 
+                                 consectetur adipisicing elit.
+                                 Dolore assumenda amet quas 
+                                 consectetur quos iure atque 
+                                 nostrum sapiente. Dolorum, quam 
+                                 reprehenderit! Voluptatem eligendi vero 
+                                 quasi quidem minus pariatur, facere molestiae.
+                            </p>
+                            <div class="reviews">
+                                <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                                    <img src="./icons/ant-design_star-filled.svg" alt="">
+                                    <img src="./icons/ant-design_star-filled.svg" alt="">
+                                </p>
+                                <p><img src="./icons/ant-design_like-outlined.svg" alt=""></p>
+                                <p><img src="./icons/ant-design_dislike-outlined.svg" alt=""></p>
+                            </div> 
+                            <p>01:39pm, Aug 13th, 2023</p>  
+                        </div>
+                    </div>
+                    <div class="right-bottom-content">
+                        <div class="image-part">
+                            <img src="./icons/elipse.svg" width="50px" height="50px"  alt="">
+                            <div class="about">
+                                <p>Name</p>
+                                <p>Location</p>
+                            </div>
+                        </div>
+                        <div class="article" role="article">
+                            <h2>Perfect</h2>
+                            <p>  Lorem ipsum dolor, sit amet 
+                                 consectetur adipisicing elit.
+                                 Dolore assumenda amet quas 
+                                 consectetur quos iure atque 
+                                 nostrum sapiente. Dolorum, quam 
+                                 reprehenderit! Voluptatem eligendi vero 
+                                 quasi quidem minus pariatur, facere molestiae.
+                            </p>
+                            <div class="reviews">
+                                <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                                    <img src="./icons/ant-design_star-filled.svg" alt="">
+                                    <img src="./icons/ant-design_star-filled.svg" alt="">
+                                </p>
+                                <p><img src="./icons/ant-design_like-outlined.svg" alt=""></p>
+                                <p><img src="./icons/ant-design_dislike-outlined.svg" alt=""></p>
+                            </div> 
+                            <p>01:39pm, Aug 13th, 2023</p>  
+                        </div>
+                    </div>
+                    <div class="right-bottom-content">
+                        <div class="image-part">
+                            <img src="./icons/elipse.svg" width="50px" height="50px"  alt="">
+                            <div class="about">
+                                <p>Name</p>
+                                <p>Location</p>
+                            </div>
+                        </div>
+                        <div class="article" role="article">
+                            <h2>Perfect</h2>
+                            <p>  Lorem ipsum dolor, sit amet 
+                                 consectetur adipisicing elit.
+                                 Dolore assumenda amet quas 
+                                 consectetur quos iure atque 
+                                 nostrum sapiente. Dolorum, quam 
+                                 reprehenderit! Voluptatem eligendi vero 
+                                 quasi quidem minus pariatur, facere molestiae.
+                            </p>
+                            <div class="reviews">
+                                <p><img src="./icons/ant-design_star-filled.svg" alt="">
+                                    <img src="./icons/ant-design_star-filled.svg" alt="">
+                                    <img src="./icons/ant-design_star-filled.svg" alt="">
+                                </p>
+                                <p><img src="./icons/ant-design_like-outlined.svg" alt=""></p>
+                                <p><img src="./icons/ant-design_dislike-outlined.svg" alt=""></p>
+                            </div> 
+                            <p>01:39pm, Aug 13th, 2023</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border"></div>
+        </div>
+
+        <!-- ------------More Collections ------------------- -->
+        <div class="collections">
+            <h2>More Collections</h2>
+            <div class="imgs">
+                <div>
+                    <img width="100px" src="./icons/Frame 102.png" alt="Samsung phone">
+                    <p>Samsung</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 103 (1).png" alt="laptop">
+                    <p>laptop</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 103.png" alt="">
+                    <p>Acer</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 104 (1).png" alt="">
+                    <p>Item Name</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 104.png" alt="Dell">
+                    <p>Dell</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="collections">
+            <h2>Best Price Appliances</h2>
+            <div class="imgs">
+                <div>
+                    <img width="100px" src="./icons/Frame 105 (1).png" alt="Samsung phone">
+                    <p>Airpod</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 105 (2).png" alt="laptop">
+                    <p>Airpod pro</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 105.png" alt="">
+                    <p>HP</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 99 (1).png" alt="">
+                    <p>Item Name</p>
+                </div>
+                <div>
+                    <img width="100px" src="./icons/Frame 99.png" alt="Dell">
+                    <p>Adidas</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <footer class="footer">
+            <!-- <a href="">
+                <img src="icons/tech-suits-trans.png" alt="techsuits footer icon" class="footer_icon">
+            </a> -->
+            <div class="email_support">
+                <h3 class="newsletter_title">Subscribe to our news letter!</h3><br>
+                <div class="inp_subs">
+                    <input type="text" class="subscribe_input" placeholder="Enter your email here...">
+                    <button class="sub_btn"><a href="#">Subscribe</a></button>
+                </div>
+                <ul class="socials">
+                    <li><a href="#"><img src="icons/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="icons/instagram.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="icons/twitter.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="icons/linkedin.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+            <div class="other_links">
+                 <ul>
+                    <li class="links_title"><a href="#">TechSuit</a></li>
+                    <li class="links"><a href="#">Blog</a></li>
+                    <li class="links"><a href="#">Track order</a></li>
+                    <li class="links"><a href="#">Privacy and Policy</a></li>
+                    <li class="links"><a href="#">Products</a></li>
+                 </ul>
+                 <ul>
+                    <li class="links_title"><a href="#">About us</a></li>
+                    <li class="links"><a href="#">My account</a></li>
+                    <li class="links"><a href="#">Shipping & Delivery</a></li>
+                    <li class="links"><a href="#">contact and Support</a></li>
+                 </ul>
+                 <ul>
+                    <li class="links"><a href="#">Terms and Conditionst</a></li>
+                    <li class="links"><a href="#">FAQs</a></li>
+                    <li class="links"><a href="#">ACCEPTED PAYMENTS</a></li>
+                    <li class="links"><a href="./Cart.html">Address</a></li>
+                 </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./nav.js"></script>
+</body>
+</html>
