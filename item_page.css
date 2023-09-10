@@ -47,7 +47,7 @@ a{
 .close_nav{
     display: none;
 }
-.items_login{
+.small_nav{
     padding-left: 30px;
     height: 0;
    overflow: hidden;
