@@ -43,7 +43,7 @@
 </style>
 <body >
     <!-- <-- this is the same everywhere -!> -->
-    <header onclick="Toggle()">
+    <header onclick="Close()">
         <nav class="fixed top-0 z-10 w-[100%] justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
             <div>
               <div class="logo">
@@ -134,7 +134,7 @@
 
 
 
-    <section onclick="Toggle()" class="w-[95%] md:w-[80%] mx-auto mt-3">
+    <section onclick="Close()" class="w-[95%] md:w-[80%] mx-auto mt-3">
 
         <div class="flex pt-3  lg:space-x-6">
 
@@ -597,6 +597,9 @@
     const SearchIcon = document.getElementById('MobileSearch')
     const Toggle = () => {
          Search.classList.toggle('hidden')
+    }
+    const Close = () => {
+        Search.classList.add('hidden')
     }
     SearchIcon.addEventListener('click', Toggle)
 </script>
