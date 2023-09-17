@@ -12,32 +12,39 @@
 
 <style>
     .SearchAnimate {
-        animation: Animation .3s linear  0s;
+        animation: Animation .3s ease-out 0s  both;
     }
 
     @keyframes Animation {
         0% {
             opacity: 0;
-            transform: translateY(-20px);
-            width: 0%;
+            background: green;
+            width: 10%;
+            right: -4px;
+            z-index: -3;
         }
 
-        5% {
-            width: 10%;
+        40% {
+           width: 30%; 
+            
         }
         70% {
-            opacity: 1;
+            opacity: .4;
+            
             
         }
 
-        80% {
-            width: 40%;
-        }
+       
 
         100% {
             opacity: 1;
+            width: 65%;
+            right: 6rem;
+            background:rgba(36, 36, 112, 0.918);
+            color: white;
         }
     }
+  
 </style>
 <body>
     <!-- <-- this is the same everywhere -!> -->
@@ -115,9 +122,9 @@
     <!-- Mobile Sarch Bar -->
 
      <div class="search_bx  mt-24 md:hidden flex relative items-end  justify-end w-full  mx-auto  md:space-x-5 flex-col pr-7" >
-         <div id="search" class="search_bar hidden  w-[40%] SearchAnimate  absolute right-4 bg-slate-400  top-10  justify-end space-x-2 border-gray-700   rounded border-2 flex-auto items-center">
-          <div class="flex items-center space-x-2   justify-end  text-sm md:text-base flex-1">
-              <input type="search" onblur="Toggle()" class="w-full text-slate-900  bg-transparent py-2 focus:outline-none border-gray-700 pl-4" placeholder="Search products, Brands, Categories">
+         <div id="search" class="search_bar hidden  items-center  w-[40%] SearchAnimate right-12   absolute  bg-slate-400    justify-end space-x-2 border-blue-800   rounded border-2 flex-auto items-center">
+          <div class="flex items-center space-x-2 top-2   justify-end text-sm md:text-base flex-1">
+              <input type="search" onblur="Toggle()" class="w-full placeholder:tracking-tight placeholder:text-xs placeholder:text-zinc-200 text-slate-900  bg-transparent py-2 focus:outline-none border-gray-700 pl-4" placeholder="Search products, Brands, Categories">
           </div>
          </div>
 
