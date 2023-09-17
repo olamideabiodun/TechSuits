@@ -12,22 +12,18 @@
 
 <style>
     .SearchAnimate {
-        animation: Animation .3s ease-out 0s  both;
+        animation: Animation .5s ease-out 0s  both;
     }
 
     @keyframes Animation {
         0% {
             opacity: 0;
             background: green;
-            width: 10%;
+           
             right: -4px;
             z-index: -3;
         }
 
-        40% {
-           width: 30%; 
-            
-        }
         70% {
             opacity: .4;
             
@@ -38,17 +34,16 @@
 
         100% {
             opacity: 1;
-            width: 65%;
-            right: 6rem;
+            right: 4rem;
             background:rgba(36, 36, 112, 0.918);
             color: white;
         }
     }
   
 </style>
-<body>
+<body >
     <!-- <-- this is the same everywhere -!> -->
-    <header>
+    <header onclick="Toggle()">
         <nav class="fixed top-0 z-10 w-[100%] justify-between flex lg:gap-[300px]  bg-white shadow-md p-5">
             <div>
               <div class="logo">
@@ -121,10 +116,10 @@
 
     <!-- Mobile Sarch Bar -->
 
-     <div class="search_bx  mt-24 md:hidden flex relative items-end  justify-end w-full  mx-auto  md:space-x-5 flex-col pr-7" >
-         <div id="search" class="search_bar hidden  items-center  w-[40%] SearchAnimate right-12   absolute  bg-slate-400    justify-end space-x-2 border-blue-800   rounded border-2 flex-auto items-center">
-          <div class="flex items-center space-x-2 top-2   justify-end text-sm md:text-base flex-1">
-              <input type="search" onblur="Toggle()" class="w-full placeholder:tracking-tight placeholder:text-xs placeholder:text-zinc-200 text-slate-900  bg-transparent py-2 focus:outline-none border-gray-700 pl-4" placeholder="Search products, Brands, Categories">
+     <div class="search_bx  mt-24 md:hidden flex relative  items-end justify-center w-full  mx-auto  md:space-x-5 flex-col pr-7" >
+         <div id="search" class="search_bar hidden  w-[70%]  SearchAnimate right-12   absolute   bg-blue-700  justify-end space-x-2 border-blue-800   rounded border-2 flex-auto items-center">
+          <div class="flex items-center space-x-2  justify-end text-sm md:text-base flex-1">
+              <input type="search" onblur="Toggle()" class="w-full placeholder:tracking-tight placeholder:text-xs placeholder:text-zinc-200 text-slate-200  bg-transparent py-2 focus:outline-none border-gray-700 pl-4" placeholder="Search products, Brands, Categories">
           </div>
          </div>
 
@@ -139,7 +134,7 @@
 
 
 
-    <section class="w-[95%] md:w-[80%] mx-auto mt-3">
+    <section onclick="Toggle()" class="w-[95%] md:w-[80%] mx-auto mt-3">
 
         <div class="flex pt-3  lg:space-x-6">
 
